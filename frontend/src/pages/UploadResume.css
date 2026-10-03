@@ -1,0 +1,635 @@
+.upload-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f7fb;
+}
+
+.upload-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.upload-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.upload-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.upload-header p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Upload Box */
+
+.upload-box {
+  background: white;
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.upload-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.upload-box h2 {
+  color: #1f2937;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.upload-box p {
+  color: #6b7280;
+}
+
+.choose-file {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.choose-file:hover {
+  background: #1d4ed8;
+}
+
+.choose-file input {
+  display: none;
+}
+
+.file-selected {
+  color: #16a34a !important;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Job Role */
+
+.job-section {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.job-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.job-section select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+/* Error */
+
+.error-message {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Analyze Button */
+
+.analyze-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.analyze-button:hover {
+  background: #1d4ed8;
+}
+
+.analyze-button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Result */
+
+.resume-result {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.resume-result > h2 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.resume-result > p {
+  text-align: center;
+  color: #4b5563;
+}
+
+/* ATS Score */
+
+.ats-score {
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px;
+  background: #f8fafc;
+  border-radius: 16px;
+}
+
+.ats-score h3 {
+  font-size: 22px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Circular Score */
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--score-color) 0deg,
+    var(--score-color) var(--score),
+    #e5e7ab var(--score),
+    #e5e7eb 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.score-circle::before {
+  content: "";
+  position: absolute;
+  width: 118px;
+  height: 118px;
+  background: white;
+  border-radius: 50%;
+}
+
+.score-number {
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.score-status {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb ;
+}
+
+/* Skills Sections */
+
+.skills-section {
+  margin-top: 25px;
+  padding: 22px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.skills-section h3 {
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.skills-section ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.skills-section li {
+  margin-bottom: 9px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.skills-section p {
+  color: #6b7280;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .upload-page {
+    padding: 25px 15px;
+  }
+
+  .upload-header h1 {
+    font-size: 28px;
+  }
+
+  .upload-box {
+    padding: 25px 15px;
+  }
+
+  .resume-result {
+    padding: 20px;
+  }
+
+  .score-circle {
+    width: 135px;
+    height: 135px;
+  }
+
+  .score-circle::before {
+    width: 105px;
+    height: 105px;
+  }
+
+  .score-number {
+    font-size: 28px;
+  }
+}
+/* Job Match Score */
+
+.job-match-score {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.job-match-score h3 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Job Match Score */
+
+.job-match-bar {
+  width: 100%;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.job-match-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #60a5fa
+  );
+  border-radius: 12px;
+  transition: width 1s ease;
+}
+
+.job-match-score p {
+  margin-top: 12px;
+  color: #4b5563;
+  font-size: 15px;
+}
+/* Job Keywords */
+
+.job-keywords-section {
+  margin-top: 25px;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 15px;
+}
+
+.job-keywords-section h3 {
+  margin-top: 15px;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.job-keywords-section h3:first-child {
+  margin-top: 0;
+}
+
+.job-keywords-section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.job-keywords-section li {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.job-keywords-section p {
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+/* Matching Keywords */
+
+.job-keywords-section h3:first-child {
+  color: #15803d;
+}
+
+.job-keywords-section h3:first-child + ul li {
+  background: #dcfce7;
+  color: #166534;
+}
+/* Missing Job Keywords */
+
+.job-keywords-section h3:nth-of-type(2) {
+  color: #dc2626;
+}
+
+.job-keywords-section h3:nth-of-type(2) + ul li {
+  background: #fee2e2;
+  color: #991b1b;
+}
+/* ATS Score Status Colors */
+
+.score-excellent {
+  color: #15803d;
+}
+
+.score-good {
+  color: #2563eb;
+}
+
+.score-average {
+  color: #d97706;
+}
+
+.score-poor {
+  color: #dc2626;
+}
+/* ============================= */
+/* Analysis Result Cards */
+/* ============================= */
+
+.skills-section {
+  margin-top: 25px;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 15px;
+  border: 1px solid #e5e7eb;
+}
+
+.skills-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.skills-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills-section li {
+  margin-bottom: 10px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.skills-section p {
+  color: #6b7280;
+  margin: 0;
+}
+/* ============================= */
+/* Skills Badges */
+/* ============================= */
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-section li {
+  display: inline-block;
+  margin: 6px;
+  padding: 9px 15px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Missing Skills - Red Badges */
+
+.skills-section:nth-of-type(2) li {
+  background: #fee2e2;
+  color: #991b1b;
+}
+/* Strengths - Green Style */
+
+.skills-section:nth-of-type(3) li {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+/* Suggestions - Yellow Style */
+
+.skills-section:nth-of-type(4) li {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+/* Suggestions - Yellow Style */
+
+.skills-section:nth-of-type(4) li {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+/* Suggestions */
+
+/* Suggestions - Yellow Badges */
+
+.skills-section .suggestions-title + ul li {
+  background: #fffbeb !important;
+  color: #92400e !important;
+  border: 1px solid #fde68a !important;
+}
+/* Suggestions - Yellow Badges */
+
+.suggestions-section li {
+  background: #fffbeb !important;
+  color: #92400e !important;
+  border: 1px solid #fde68a !important;
+}
+.suggestions-section li {
+  background: #fef3c7 !important;
+  color: #92400e !important;
+  border: 1px solid #f59e0b !important;
+}
+/* ============================= */
+/* Job Keyword Badges */
+/* ============================= */
+
+.job-keywords-section li {
+  display: inline-block;
+  margin: 6px;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Matching Keywords */
+
+.job-keywords-section h3:first-child + ul li {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+  border: 1px solid #86efac;
+}
+
+/* Missing Job Keywords */
+
+.job-keywords-section h3:nth-of-type(2) + ul li {
+  background: #fee2e2 !important;
+  color: #991b1b !important;
+  border: 1px solid #fca5a5;
+}
+/* ============================= */
+/* Mobile Responsive Design */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .upload-container {
+    width: 92%;
+    padding: 20px;
+  }
+
+  .upload-header h1 {
+    font-size: 28px;
+  }
+
+  .upload-header p {
+    font-size: 14px;
+  }
+
+  .upload-box {
+    padding: 25px 15px;
+  }
+
+  .job-description-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .score-circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .score-circle::before {
+    width: 102px;
+    height: 102px;
+  }
+
+  .score-number {
+    font-size: 28px;
+  }
+
+  .job-match-score,
+  .job-keywords-section,
+  .skills-section {
+    padding: 18px;
+  }
+
+  .job-match-bar {
+    height: 16px;
+  }
+
+  .skills-section li,
+  .job-keywords-section li {
+    font-size: 13px;
+    padding: 8px 12px;
+    margin: 4px;
+  }
+
+  .analyze-button {
+    width: 100%;
+  }
+}
+/* ============================= */
+/* Loading Spinner */
+/* ============================= */
+
+.loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ============================= */
+/* Reset / Analyze Another Button */
+/* ============================= */
+
+.reset-button {
+  display: block;
+  margin: 30px auto 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
